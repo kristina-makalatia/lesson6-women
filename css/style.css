@@ -1,0 +1,115 @@
+/*header styles*/
+.d-inline-block {
+	display: inline-block;
+}
+.header-wraper {
+	background: lightblue;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+}
+body {
+	/*padding-top: 56px;*/
+}
+.section-after-header {
+	margin-top: 56px;
+}
+
+/*image chat*/
+.image-chat {
+	height: 80px;
+}
+.chat-block {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	z-index: 10;
+}
+
+/*image absolute & relative*/
+.hello {
+	position: absolute;
+	top: 50px;
+	left: 150px;
+	color: #fff;
+}
+.image-wraper {
+	position: relative;
+}
+.image-block {
+	width: 100%;
+}
+
+/*center with position property*/
+.wraper-block {
+	width: 600px;
+	height: 600px;
+	background: yellow;
+	position: relative;
+
+/*	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	transition-delay: 2s;*/
+	transition: all 0.5s linear 2s;
+}
+.child-block{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: all 2s linear;
+}
+
+/*hover effects*/
+.wraper-block:hover {
+	background: red;
+}
+.child-block:hover {
+	background: grey;
+	transform:translate(-50%,-50%) rotate(45deg);
+}
+/*.wraper-block:hover .child-block {
+	background: coral;
+}*/
+.nav-a:hover {
+	color:  red;
+}
+
+/*animation car*/
+.image-car {
+	height: 150px;
+	animation: caranimationtrasnlate 5s infinite alternate 5s;
+	/*position: absolute;*/
+}
+.animation-block {
+	/*position: relative;*/
+	max-width: 1170px;
+	width: 100%;
+	height: 200px;
+}
+
+/*keyframe animation*/
+/*@keyframes caranimation {
+	0% {left: 0}
+	25% {left: 20%;}
+	50% {left: 40%;}
+	70% {left: 60%;}
+	80% {left: 80%;}
+	100% {left: 100%;}
+}*/
+
+@keyframes caranimationtrasnlate {
+	0% {transform:translateX(0);}
+	25% {transform:translateX(120%);}
+	50% {transform:translateX(240%);}
+	70% {transform:translateX(360%);}
+	80% {transform:translateX(480%);}
+	100% {transform:translateX(500%);}
+}
